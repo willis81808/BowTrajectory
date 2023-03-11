@@ -1,0 +1,516 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Core">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader.Core">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\BepInEx.Preloader.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.Common">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\BepInEx.Unity.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+    </Reference>
+    <Reference Include="bolt">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\bolt.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.Unity">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Bolt.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="bolt.user">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\bolt.user.dll</HintPath>
+    </Reference>
+    <Reference Include="BulletBallistics">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\BulletBallistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Endnight">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Endnight.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\Il2CppInterop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Generator">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\Il2CppInterop.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.HarmonySupport">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\Il2CppInterop.HarmonySupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Security">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppMono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Configuration">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppSystem.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Data">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppSystem.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Numerics">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppSystem.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Runtime.Serialization">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml.Linq">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2CppSystem.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Mache">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\plugins\willis81808-Mache\Mache.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Ai.Utilities">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Ai.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Ai.Vail">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Ai.Vail.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Animation.Mae">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Animation.Mae.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Areas">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Areas.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Atmosphere">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Atmosphere.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Attributes">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Cinematics">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Cinematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Construction">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Construction.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Construction.GRABS">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Construction.GRABS.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Construction.Utils">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Construction.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.ConstructionBoltToken">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.ConstructionBoltToken.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Crest">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Crest.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Debug">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Dlss">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Dlss.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Environment">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Environment.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Events">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Extensions">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.FieldOfView">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.FieldOfView.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.FMOD">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.FMOD.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.FpsUtility">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.FpsUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.GameApplication">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.GameApplication.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Gameplay.GameSetup">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Gameplay.GameSetup.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Gameplay.LevelProps">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Gameplay.LevelProps.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Gameplay.StatusEffects">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Gameplay.StatusEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Gui">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Gui.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Gui.Colors">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Gui.Colors.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Gui.Multiplayer">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Gui.Multiplayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Gui.Options">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Gui.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Input">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Interfaces">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Item">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Item.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Loading">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Loading.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Lodding">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Lodding.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Multiplayer">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Multiplayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.ObsoleteMonos">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.ObsoleteMonos.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Physics">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.PostProcessing">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.PostProcessing.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Quality">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Quality.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Ragdoll">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Ragdoll.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Rendering">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Save">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Save.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Scratchpad">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Scratchpad.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Settings">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.SettingsWrappers">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.SettingsWrappers.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.StatSystem">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.StatSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Testing">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Tests">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Trees">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Trees.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.UiElements">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.UiElements.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Utilities">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.VFX">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.VFX.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.VFX.SimpleUnderwater">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.VFX.SimpleUnderwater.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Weapon">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Sons.Weapon.dll</HintPath>
+    </Reference>
+    <Reference Include="SonsTerrainScripts">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\SonsTerrainScripts.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CrossSceneReference">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.CrossSceneReference.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.BatchRendererGroup-Testing">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.RenderPipelines.BatchRendererGroup-Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Splines.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.ContentLoadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.NVIDIAModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.PropertiesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniverseLib.IL2CPP.Interop">
+      <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\plugins\willis81808-Mache\UniverseLib.IL2CPP.Interop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
